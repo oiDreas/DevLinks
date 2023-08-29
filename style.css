@@ -33,6 +33,7 @@
 
 body {
   background: var(--fundo-root) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -165,4 +166,16 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+/* MEDIA QUERIES */
+@media(min-width: 700px) {
+  :root {
+    --fundo-root: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --fundo-root: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
